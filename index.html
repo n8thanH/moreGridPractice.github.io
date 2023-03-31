@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        navbar {
+            background-color: rgb(61, 61, 61);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 5vh;
+        }
+
+        .link > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #gridContainer {
+            background-color: blue;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 95vh;
+        }
+
+        #grid-item {
+            border: 1px solid white;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <navbar>
+        <div class="link"><a href="index.html">Page 1</a></div>
+        <div class="link"><a href="practice2.html">Page 2</a></div>
+        <div class="link"><a href="practice3.html">Page 3</a></div>
+        <div class="link"><a href="practice4.html">Page 4</a></div>
+        <div class="link"><a href="practice5.html">Page 5</a></div>
+    </navbar>
+    <div id="gridContainer">
+        <div id="grid-item">1. </div>
+        <div id="grid-item">2. </div>
+        <div id="grid-item">3. </div>
+        <div id="grid-item">4. </div>
+    </div>
+</body>
+</html>

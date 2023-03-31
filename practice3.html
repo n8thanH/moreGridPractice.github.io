@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        navbar {
+            background-color: rgb(61, 61, 61);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 5vh;
+        }
+
+        .link > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #pageContainer {
+            background-color: rgb(34, 34, 254);
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            height: 95vh;
+        }
+
+        #modalContent {
+            background-color: snow;
+            padding: 15vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <navbar>
+        <div class="link"><a href="index.html">Page 1</a></div>
+        <div class="link"><a href="practice2.html">Page 2</a></div>
+        <div class="link"><a href="practice3.html">Page 3</a></div>
+        <div class="link"><a href="practice4.html">Page 4</a></div>
+        <div class="link"><a href="practice5.html">Page 5</a></div>
+    </navbar>
+
+    <div id="pageContainer">
+        <div id="modalContent">
+            Modal Content
+        </div>
+    </div>
+</body>
+
+</html>

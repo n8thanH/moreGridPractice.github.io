@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        navbar {
+            background-color: rgb(61, 61, 61);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 5vh;
+        }
+
+        .link > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #pageContainer {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contentContainer {
+            border: 1px solid black;
+            padding: 5vh;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 25vh;
+        }
+
+        #formContainer {
+            background-color: darkgray;
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 2vh;
+            gap: 2vw;
+        }
+
+        #labels {
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+            gap: 1vh;
+        }
+
+        #inputs {
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+            gap: 1vh;
+        }
+
+        #submitButton {
+            background-color: blue;
+            color: white;
+            padding: 2vh;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <navbar>
+        <div class="link"><a href="index.html">Page 1</a></div>
+        <div class="link"><a href="practice2.html">Page 2</a></div>
+        <div class="link"><a href="practice3.html">Page 3</a></div>
+        <div class="link"><a href="practice4.html">Page 4</a></div>
+        <div class="link"><a href="practice5.html">Page 5</a></div>
+    </navbar>
+
+    <div id="pageContainer">
+        <div id="contentContainer">
+            <h2>Register Form</h2>
+            <div id="formContainer">
+                <div id="labels">
+                    <p>Email</p>
+                    <p>First Name</p>
+                    <p>Last Name</p>
+                    <p>Deposit ($)</p>
+                    <p>Comment</p>
+                </div>
+                <div id="inputs">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Deposit ($)">
+                    <input type="text" placeholder="Add Comment Here">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

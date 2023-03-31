@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 4</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        navbar {
+            background-color: rgb(61, 61, 61);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 5vh;
+        }
+
+        .link > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #pageContainer {
+            height: 95vh;
+            display: grid;
+            grid-template-rows: 1fr 8fr 1fr;
+        }
+
+        #header {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+        }
+
+        #pageContent {
+            background-color: white;
+            padding: 15px;
+        }
+
+        #footer {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <navbar>
+        <div class="link"><a href="index.html">Page 1</a></div>
+        <div class="link"><a href="practice2.html">Page 2</a></div>
+        <div class="link"><a href="practice3.html">Page 3</a></div>
+        <div class="link"><a href="practice4.html">Page 4</a></div>
+        <div class="link"><a href="practice5.html">Page 5</a></div>
+    </navbar>
+
+    <div id="pageContainer">
+        <div id="header">Header</div>
+        <div id="pageContent">Page Content</div>
+        <div id="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>
